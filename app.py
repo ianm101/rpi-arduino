@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 script_fp = 'hook_script.sh'
 
+@app.route("/", methods=['GET'])
+def index():
+	return "<p>Hello world</p>"
+
 @app.route('/payload', methods=['POST'])
 def payload():
     data = request.get_json()
