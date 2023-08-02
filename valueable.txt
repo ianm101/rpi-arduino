@@ -2,4 +2,4 @@ ngrok http --domain=desired-miserably-skunk.ngrok-free.app 5000
 python app.py (after getting into venv)
 ./upload_script to run script to arduino
 
-test
+test2
