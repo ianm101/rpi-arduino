@@ -13,7 +13,7 @@ def index():
 def payload():
     data = request.get_json()
     if data['ref'] == 'refs/heads/main':
-        subprocess.run([script_fp])  # Add your script here
+        subprocess.run([f'./{script_fp}'])  # Add your script here
     return '', 204
 
 if __name__ == "__main__":
