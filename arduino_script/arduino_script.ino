@@ -27,4 +27,5 @@ void rapid(int numTimes) {
 // the loop routine runs over and over again forever:
 void loop() {
   rapid(5);              // wait for a second
+  delay(2000);
 }
