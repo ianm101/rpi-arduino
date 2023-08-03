@@ -15,10 +15,16 @@ void setup() {
   pinMode(led, OUTPUT);     
 }
 
+void rapid(int numTimes) {
+  for (int i = 0; i < numTimes; i++){
+    digitalWrite(led, HIGH);
+    delay(200);
+    digitalWrite(led, LOW);
+    delay(200);
+  }
+}
+
 // the loop routine runs over and over again forever:
 void loop() {
-  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);               // wait for a second
-  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
-  delay(200);               // wait for a second
+  rapid(5);              // wait for a second
 }
