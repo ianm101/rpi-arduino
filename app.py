@@ -13,7 +13,7 @@ script_fp = 'hook_script.sh'
 
 @app.route("/", methods=['GET'])
 def index():
-	return "<p>Hello world</p>"
+	return "<h1>Hello world</h1>"
 
 @app.route('/payload', methods=['POST'])
 def payload():
