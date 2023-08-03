@@ -1,5 +1,11 @@
 from flask import Flask, request
 import subprocess
+import os
+
+
+def get_current_user():
+    return os.geteuid()
+
 
 app = Flask(__name__)
 
@@ -17,5 +23,6 @@ def payload():
     return '', 204
 
 if __name__ == "__main__":
+    current_user = get_current_user()
+    print(f"Current User ID: {current_user}")
     app.run(host="0.0.0.0", port=5000)
-
