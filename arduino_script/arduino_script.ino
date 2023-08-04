@@ -18,14 +18,14 @@ void setup() {
 void rapid(int numTimes) {
   for (int i = 0; i < numTimes; i++){
     digitalWrite(led, HIGH);
-    delay(200);
+    delay(100);
     digitalWrite(led, LOW);
-    delay(200);
+    delay(100);
   }
 }
 
 // the loop routine runs over and over again forever:
 void loop() {
-  rapid(5);              // wait for a second
-  delay(2000);
+  rapid(3);              // wait for a second
+  delay(1000);
 }
